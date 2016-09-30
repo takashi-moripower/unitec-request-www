@@ -7,3 +7,114 @@ and open the template in the editor.
     Created on : 2016/09/21, 16:04:45
     Author     : T.Abe Work
 */
+html, body {
+  height: 100%; }
+
+#wrap {
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  #wrap #header {
+    background-color: #C1272C;
+    color: white;
+    height: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 0; }
+  #wrap #footer {
+    background-color: #C1272C;
+    color: white;
+    height: 3rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+
+.left-nav {
+  min-height: 100%;
+  background-color: #F1F1F1  !important;
+  padding-top: 1rem;
+  border-left: 1px solid lightgray; }
+
+.right-main {
+  min-height: 100%;
+  background-color: #F1F1F1  !important;
+  padding-top: 1rem;
+  position: relative;
+  border-right: 1px solid lightgray; }
+  .right-main:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    z-index: 10;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    background-color: white; }
+
+.left-nav-progress .item {
+  line-height: 3rem;
+  font-size: 1.6rem;
+  position: relative;
+  padding-left: 3.5rem; }
+  .left-nav-progress .item i.fa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2.4rem; }
+  .left-nav-progress .item.active {
+    background-color: #C1272C;
+    color: white; }
+    .left-nav-progress .item.active i.fa {
+      color: #C1272C;
+      background-color: white; }
+
+.left-nav-progress .arrow {
+  text-align: center; }
+
+h1.title {
+  display: inline-block;
+  position: relative;
+  background-color: #4D4D4D;
+  color: white;
+  margin-left: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  padding-left: 7rem;
+  padding-right: 4rem;
+  line-height: 5rem; }
+  h1.title i.fa {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: white;
+    color: #4D4D4D;
+    font-size: 3rem;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem; }
+
+.my-btn {
+  border: 2px solid #C1272C;
+  background-color: white;
+  color: #C1272C;
+  font-size: 3rem;
+  line-height: 4rem;
+  border-radius: 2.5rem;
+  padding: 0.5rem 2rem; }
+  .my-btn:hover {
+    background-color: #f8f8f8;
+    text-decoration: none;
+    color: #C1272C; }
+
+select[name^=date] {
+  width: 8rem;
+  display: inline-block; }

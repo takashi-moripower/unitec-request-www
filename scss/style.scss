@@ -8,3 +8,169 @@ and open the template in the editor.
     Author     : T.Abe Work
 */
 
+$bg-header : #C1272C;
+$height-header:3rem;
+$height-footer:3rem;
+
+
+
+html,body{
+	height: 100%;
+}
+
+#wrap{
+	width: 100%;
+	position: relative;
+	min-height: 100%;
+
+	padding-top:$height-header;
+	padding-bottom: $height-footer;
+
+	.container{
+//		height:100%;
+	}
+
+
+	#header{
+		background-color:$bg-header;
+		color:white;
+		height: $height-header;
+		width:100%;
+		position:absolute;
+		top:0;
+	}
+
+	#footer{
+		background-color:$bg-header;
+		color:white;
+
+		height: $height-footer;
+		width:100%;
+		position: absolute;
+		bottom: 0;
+	}	
+}
+
+body{
+}
+
+.left-nav{
+	min-height:100%;
+	background-color:#F1F1F1  !important;
+	padding-top:1rem;
+
+	border-left:1px solid lightgray;
+}
+.right-main{
+	min-height:100%;
+	background-color:#F1F1F1  !important;
+	padding-top:1rem;
+	position:relative;
+
+	border-right:1px solid lightgray;
+
+	&:after{
+		content:' ';
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		width:10px;
+		height:100%;
+		z-index:10;
+		border-left:1px solid lightgray;
+		border-right:1px solid lightgray;
+		background-color:white;
+	}
+}
+
+
+
+.left-nav-progress{
+	.item{
+		line-height:3rem;
+		font-size:1.6rem;
+		position:relative;
+		padding-left:3.5rem;
+
+		i.fa{
+			position:absolute;
+			top:0;
+			left:0;
+			width:3rem;
+			height:3rem;
+			line-height:3rem;
+			font-size:2.4rem;
+		}
+
+		&.active{
+			background-color:$bg-header;
+			color:white;
+			i.fa{
+				color:$bg-header;
+				background-color:white;
+			}
+		}
+
+	}
+
+	.arrow{
+		text-align:center;
+	}
+}
+
+h1.title{
+	display:inline-block;
+	position:relative;
+	background-color:#4D4D4D;
+	color:white;
+
+	$h:5rem;
+
+
+	margin-left:$h;
+	height:$h;
+	border-radius:$h/2;
+	padding-left:$h +2rem;
+	padding-right:4rem;
+	line-height:5rem;
+
+
+	i.fa{
+
+		$r:4rem;
+		$f:3rem;
+		position:absolute;
+		top:($h - $r)/2;
+		left:($h - $r)/2;
+		background-color:white;
+		color:#4D4D4D;
+		font-size:$f;
+		line-height:$r;
+		width:$r;
+		height:$r;
+		border-radius:$r / 2;
+	}
+}
+
+.my-btn{
+	border:2px solid $bg-header;
+	background-color:white;
+	color:$bg-header;
+	&:hover{
+		background-color:#f8f8f8;
+		text-decoration:none;
+		color:$bg-header;
+	}
+
+	font-size:3rem;
+	line-height:4rem;
+	border-radius:2.5rem;
+
+	padding:0.5rem 2rem;
+}
+
+select[name^=date]{
+	width:8rem;
+	display:inline-block;
+}

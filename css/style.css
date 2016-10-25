@@ -79,7 +79,6 @@ html, body {
     .nav-progress .item.active i.fa {
       color: #C1272C;
       background-color: white; }
-
 .nav-progress .arrow {
   text-align: center; }
 
@@ -131,23 +130,24 @@ h1.title {
   position: relative;
   background-color: #4d4d4d;
   color: white;
-  margin-left: 5rem;
-  min-height: 5rem;
-  border-radius: 2.5rem;
-  padding-left: 7rem;
-  padding-right: 4rem;
-  line-height: 5rem; }
+  margin-left: 4rem;
+  min-height: 4rem;
+  border-radius: 2rem;
+  padding-left: 6rem;
+  padding-right: 3rem;
+  line-height: 4rem;
+  font-size: 3.2rem; }
   h1.title i.fa {
     position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
+    top: 0.4rem;
+    left: 0.4rem;
     background-color: white;
     color: #4d4d4d;
-    font-size: 3rem;
-    line-height: 4rem;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 2rem; }
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 1.6rem; }
 
 h2.h2-type1 {
   display: inline-block;
@@ -166,13 +166,22 @@ h3.h3-type1 {
   margin-bottom: 3rem;
   margin-top: 0; }
 
+h3.h3-type2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  border-bottom: 1px solid #C1272C;
+  border-left: 2rem solid #C1272C; }
+
 .my-btn {
   border: 2px solid #C1272C;
   background-color: white;
   color: #C1272C;
-  font-size: 3rem;
-  line-height: 4rem;
-  border-radius: 2.5rem;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  border-radius: 2rem;
   padding: 0.5rem 2rem; }
   .my-btn:hover {
     background-color: #f8f8f8;
@@ -202,7 +211,7 @@ table.my-form {
     background-color: #B2B2B2;
     color: white; }
     table.my-form th.requied:before {
-      content: '[必須]';
+      content: "[必須]";
       color: #C1272C;
       display: block; }
   table.my-form td {
@@ -303,6 +312,36 @@ ol.step-explain {
   .my-list1.my-list1-narrow li {
     margin-bottom: .5rem; }
 
+ol.my-list2 {
+  list-style: decimal;
+  padding-left: 2rem; }
+  ol.my-list2 > li {
+    position: relative;
+    font-size: 1.6rem; }
+    ol.my-list2 > li:before {
+      position: absolute;
+      left: -2rem;
+      display: block;
+      width: 100%;
+      border-bottom: 1px dashed #C1272C;
+      content: ''; }
+    ol.my-list2 > li > ul {
+      margin-top: .75rem;
+      margin-bottom: 1rem;
+      padding-left: 3rem;
+      list-style: none; }
+      ol.my-list2 > li > ul > li {
+        font-size: 1.4rem;
+        position: relative; }
+        ol.my-list2 > li > ul > li:before {
+          font-family: 'FontAwesome';
+          content: '\f111';
+          position: absolute;
+          top: 0.2rem;
+          left: -1.5rem;
+          color: #C1272C;
+          font-size: 0.6rem; }
+
 .my-hr {
   background-color: #B2B2B2;
   height: 1px;
@@ -317,3 +356,11 @@ div.message {
   .parts-image img {
     max-width: 100%;
     width: 100%; }
+
+table.table-parts tbody > tr > td,
+table.table-parts tbody > tr > th {
+  vertical-align: middle; }
+table.table-parts th.check {
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

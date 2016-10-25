@@ -159,7 +159,7 @@ body{
 			&.active{
 				background-color:$bg-header;
 				color:white;
-				
+
 				&:after{
 					position:absolute;
 					width:100%;
@@ -169,7 +169,7 @@ body{
 					top:-3.3rem;
 					left:0;
 					font-size:3rem;
-					
+
 				}
 			}
 			i{
@@ -182,7 +182,7 @@ body{
 				line-height:$o;
 			}
 		}
-		
+
 		td.arrow{
 			font-size:1.6rem;
 			color:$bg-header;
@@ -203,21 +203,21 @@ h1.title{
 	background-color:$bg-h1;
 	color:white;
 
-	$h:5rem;
+	$h:4rem;
 
 
 	margin-left:$h;
 	min-height:$h;
 	border-radius:$h/2;
-	padding-left:$h +2rem;
-	padding-right:4rem;
-	line-height:5rem;
-
+	padding-left:$h + 2rem;
+	padding-right:$h - 1rem;
+	line-height:$h;
+	font-size: $h * 0.8;
 
 	i.fa{
 
-		$r:4rem;
-		$f:3rem;
+		$r: $h * 0.8;
+		$f: $h * 0.6;
 		position:absolute;
 		top:($h - $r)/2;
 		left:($h - $r)/2;
@@ -251,6 +251,17 @@ h3.h3-type1{
 	margin-top:0;
 }
 
+h3.h3-type2{
+	font-size:1.8rem;
+	font-weight:bold;
+	padding-left:0.5rem;
+	margin-bottom:1.5rem;
+	margin-top:0;
+
+	border-bottom:1px solid $bg-header;
+	border-left:2rem solid $bg-header;
+}
+
 .my-btn{
 	border:2px solid $bg-header;
 	background-color:white;
@@ -274,9 +285,11 @@ h3.h3-type1{
 		}
 	}
 
-	font-size:3rem;
-	line-height:4rem;
-	border-radius:2.5rem;
+	$h : 3rem;
+
+	font-size: $h * .75;
+	line-height: $h;
+	border-radius:($h / 2 + 0.5rem);
 	padding:0.5rem 2rem;
 
 }
@@ -285,6 +298,10 @@ button.my-btn{
 	padding:0.3rem 1.8rem 0.2rem;
 }
 
+
+////////////////////////////////////////////////////////////////////////////////
+//	table form
+////////////////////////////////////////////////////////////////////////////////
 
 table.my-form{
 	width:100%;
@@ -398,6 +415,10 @@ table.my-form{
 	}
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//	step explain
+////////////////////////////////////////////////////////////////////////////////
+
 ol.step-explain{
 	margin-top:1rem;
 	font-size:2rem;
@@ -446,6 +467,45 @@ ol.step-explain{
 	}
 }
 
+ol.my-list2{
+	list-style:decimal;
+	padding-left:2rem;
+
+
+	>li{
+		position:relative;
+		font-size:1.6rem;
+		&:before{
+			position:absolute;
+			left:-2rem;
+			display:block;
+			width:100%;
+			border-bottom:1px dashed $bg-header;
+			content:'';
+		}
+		>ul{
+			margin-top:.75rem;
+			margin-bottom:1rem;
+			padding-left:3rem;
+			list-style:none;
+			>li{
+				font-size:1.4rem;
+				position:relative;
+				&:before{
+					font-family:'FontAwesome';
+					content:'\f111';
+					position:absolute;
+					top:0.2rem;
+					left:-1.5rem;
+					color:$bg-header;
+					font-size:0.6rem;
+				}
+
+			}
+		}
+	}
+}
+
 
 .my-hr{
 	background-color:$bg-form-header;
@@ -471,4 +531,14 @@ div.message{
 }
 
 select.cost option{
+}
+
+table.table-parts{
+	tbody>tr>td,
+	tbody>tr>th{
+		vertical-align:middle;
+	}
+	th.check{
+		padding:0;
+	}
 }

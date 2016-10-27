@@ -314,7 +314,8 @@ ol.step-explain {
 
 ol.my-list2 {
   list-style: decimal;
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  margin-bottom: 3rem; }
   ol.my-list2 > li {
     position: relative;
     font-size: 1.6rem; }

@@ -339,6 +339,7 @@ table.my-form{
 			}
 		}
 		&.my-form-address{
+
 			.post-icon{
 				$h : 32px;
 				background-color:$bg-h1;
@@ -353,14 +354,24 @@ table.my-form{
 				vertical-align:-3px;
 				border-radius:2px;
 			}
-			.form-group{
+
+			.form-group{				
 				display:inline-block;
 				input[name="post-code"]{
+					display:inline-block;
 					width:200px;
 				}
 				input[name="address"]{
+					display:inline-block;
 					width:500px;
 				}
+			}
+		}
+
+		&.my-form-check{
+			div.checkbox{
+				display:inline-block;
+				margin-right:1rem;
 			}
 		}
 
@@ -411,6 +422,13 @@ table.my-form{
 			position:relative;
 			top:-10px;
 			left:10px;
+		}
+
+		.form-group.date{
+			display:inline-block;
+			&>div{
+				display:inline-block;
+			};
 		}
 	}
 }

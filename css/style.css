@@ -240,9 +240,14 @@ table.my-form {
     table.my-form td.my-form-address .form-group {
       display: inline-block; }
       table.my-form td.my-form-address .form-group input[name="post-code"] {
+        display: inline-block;
         width: 200px; }
       table.my-form td.my-form-address .form-group input[name="address"] {
+        display: inline-block;
         width: 500px; }
+    table.my-form td.my-form-check div.checkbox {
+      display: inline-block;
+      margin-right: 1rem; }
     table.my-form td.my-form-radio input[type="radio"] {
       display: none; }
     table.my-form td.my-form-radio div.my-radio {
@@ -276,6 +281,10 @@ table.my-form {
       position: relative;
       top: -10px;
       left: 10px; }
+    table.my-form td .form-group.date {
+      display: inline-block; }
+      table.my-form td .form-group.date > div {
+        display: inline-block; }
 
 ol.step-explain {
   margin-top: 1rem;

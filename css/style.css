@@ -242,7 +242,7 @@ table.my-form {
       table.my-form td.my-form-address .form-group input[name="post-code"] {
         display: inline-block;
         width: 200px; }
-      table.my-form td.my-form-address .form-group input[name="address"] {
+      table.my-form td.my-form-address .form-group input[name^="address"] {
         display: inline-block;
         width: 500px; }
     table.my-form td.my-form-check div.checkbox {

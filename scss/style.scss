@@ -361,7 +361,7 @@ table.my-form{
 					display:inline-block;
 					width:200px;
 				}
-				input[name="address"]{
+				input[name^="address"]{
 					display:inline-block;
 					width:500px;
 				}

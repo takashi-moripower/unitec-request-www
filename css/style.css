@@ -200,6 +200,14 @@ h3.h3-type2 {
 button.my-btn {
   padding: 0.3rem 1.8rem 0.2rem; }
 
+div.access {
+  padding: 2rem;
+  background-color: white;
+  border-top: 1px solid #C1272C;
+  border-bottom: 1px solid #C1272C;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+
 table.my-form {
   width: 100%;
   border: 1px solid #7F7F7F;
@@ -305,12 +313,12 @@ ol.step-explain {
 
 .my-list1 {
   list-style: none; }
-  .my-list1 li {
+  .my-list1 > li {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     line-height: 150%;
     position: relative; }
-    .my-list1 li:before {
+    .my-list1 > li:before {
       font-family: 'FontAwesome';
       content: '\f111';
       position: absolute;

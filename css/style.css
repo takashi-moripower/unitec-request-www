@@ -250,9 +250,12 @@ table.my-form {
       table.my-form td.my-form-address .form-group input[name="post-code"] {
         display: inline-block;
         width: 200px; }
-      table.my-form td.my-form-address .form-group input[name^="address"] {
+      table.my-form td.my-form-address .form-group input[name="address1"] {
         display: inline-block;
-        width: 500px; }
+        width: 240px; }
+      table.my-form td.my-form-address .form-group input[name="address2"] {
+        display: inline-block;
+        width: 480px; }
     table.my-form td.my-form-check div.checkbox {
       display: inline-block;
       margin-right: 1rem; }

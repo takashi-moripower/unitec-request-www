@@ -372,9 +372,13 @@ table.my-form{
 					display:inline-block;
 					width:200px;
 				}
-				input[name^="address"]{
+				input[name="address1"]{
 					display:inline-block;
-					width:500px;
+					width:240px;
+				}
+				input[name="address2"]{
+					display:inline-block;
+					width:480px;
 				}
 			}
 		}

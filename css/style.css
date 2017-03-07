@@ -11,6 +11,9 @@ and open the template in the editor.
 html, body {
   height: 100%; }
 
+.email-img {
+  width: 360px; }
+
 #wrap {
   width: 100%;
   position: relative;
